@@ -16,39 +16,44 @@
 
     <h2>Envia un mensaje</h2>
     <form action="#">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <br>
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br>
-        
-        <label for="telefono">Telefono:</label>
-        <input type="tel" id="telefono" name="telefono" required>
-        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
 
-        <label for="programa">Programa de Interés:</label>
-        <select id="programa" name="programa" required>
-            <option value="">Selecciona un programa</option>
-            <option value="pldc">Regeneración y Reforestación</option>
-            <option value="programa2">Limpieza de Costas y Cuencas</option>
-            <option value="programa3">Viverismo Comunitario</option>
-        </select>
-        <br>
+        <div>
+            <label for="telefono">Telefono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </div>
 
-        <label for="disponibilidad">Disponibilidad:</label>
-        <select id="disponibilidad" name="disponibilidad" required>
-            <option value="">Selecciona tu disponibilidad</option>
-            <option value="manana">Mañana</option>
-            <option value="tarde">Tarde</option>
-            <option value="noche">Noche</option>
-        </select>
-        <br>
+        <div>
+            <label for="programa">Programa de Interés:</label>
+            <select id="programa" name="programa" required>
+                <option value="">Selecciona un programa</option>
+                <option value="pldc">Regeneración y Reforestación</option>
+                <option value="programa2">Limpieza de Costas y Cuencas</option>
+                <option value="programa3">Viverismo Comunitario</option>
+            </select>
+        </div>
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
-        <br>
+        <div>
+            <label for="disponibilidad">Disponibilidad:</label>
+            <select id="disponibilidad" name="disponibilidad" required>
+                <option value="">Selecciona tu disponibilidad</option>
+                <option value="manana">Mañana</option>
+                <option value="tarde">Tarde</option>
+                <option value="noche">Noche</option>
+            </select>
+        </div>
+        <div>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        </div>
 
         <button type="submit">Enviar</button>
     </form>
