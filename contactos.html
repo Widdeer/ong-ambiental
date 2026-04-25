@@ -6,56 +6,59 @@
     <title>Contactos</title>
 </head>
 <body>
-     <h1>Contacto</h1>
-    <section>
-        <h2>Fundacion EcoConciencia</h2>
-        <p>Dirección: Calle Falsa 123, Ciudad, País</p>
-        <p>Teléfono: +123 456 7890</p>
-        <p>Horario de atención: Lunes a Viernes de 9:00 a 22:00</p>
-    </section>
+    <main>
+        <h1>Contacto</h1>
+        <section>
+            <h2>Fundacion EcoConciencia</h2>
+            <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+            <p>Teléfono: +123 456 7890</p>
+            <p>Horario de atención: Lunes a Viernes de 9:00 a 22:00</p>
+        </section>
 
-    <h2>Envia un mensaje</h2>
-    <form action="#">
-        <div>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-        </div>
+        <h2>Envia un mensaje</h2>
+        <form action="#">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
 
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
 
-        <div>
-            <label for="telefono">Telefono:</label>
-            <input type="tel" id="telefono" name="telefono" required>
-        </div>
+            <div>
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
 
-        <div>
-            <label for="programa">Programa de Interés:</label>
-            <select id="programa" name="programa" required>
-                <option value="">Selecciona un programa</option>
-                <option value="pldc">Regeneración y Reforestación</option>
-                <option value="programa2">Limpieza de Costas y Cuencas</option>
-                <option value="programa3">Viverismo Comunitario</option>
-            </select>
-        </div>
+            <div>
+                <label for="programa">Programa de Interés:</label>
+                <select id="programa" name="programa" required>
+                    <option value="">Selecciona un programa</option>
+                    <option value="pldc">Regeneración y Reforestación</option>
+                    <option value="programa2">Limpieza de Costas y Cuencas</option>
+                    <option value="programa3">Viverismo Comunitario</option>
+                </select>
+            </div>
 
-        <div>
-            <label for="disponibilidad">Disponibilidad:</label>
-            <select id="disponibilidad" name="disponibilidad" required>
-                <option value="">Selecciona tu disponibilidad</option>
-                <option value="manana">Mañana</option>
-                <option value="tarde">Tarde</option>
-                <option value="noche">Noche</option>
-            </select>
-        </div>
-        <div>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
-        </div>
+            <div>
+                <label for="disponibilidad">Disponibilidad:</label>
+                <select id="disponibilidad" name="disponibilidad" required>
+                    <option value="">Selecciona tu disponibilidad</option>
+                    <option value="manana">Mañana</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noche">Noche</option>
+                </select>
+            </div>
+            <div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
 
-        <button type="submit">Enviar</button>
-    </form>
+            <button type="submit">Enviar</button>
+        </form>
+
+    </main>
 </body>
 </html>
