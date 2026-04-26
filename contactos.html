@@ -6,6 +6,20 @@
     <title>Contactos</title>
 </head>
 <body>
+
+    <header>
+        <p><a href="#programas-destacados">Ir a programas destacados</a></p>
+        <h1>EcoConciencia por un Futuro Sustentable</h1>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="programas.html">Programas</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
         <h1>Contacto</h1>
         <section>
@@ -15,55 +29,57 @@
             <p>Horario de atención: Lunes a Viernes de 9:00 a 22:00</p>
         </section>
 
-        <h2>Envia un mensaje</h2>
-        <form action="#">
-            <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>
+        <section>
+            <h2>Envia un mensaje</h2>
+            <form action="#">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
 
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-            <div>
-                <label for="telefono">Telefono:</label>
-                <input type="tel" id="telefono" name="telefono" required>
-            </div>
+                <div>
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
 
-            <div>
-                <label for="programa">Programa de Interés:</label>
-                <select id="programa" name="programa" required>
-                    <option value="">Selecciona un programa</option>
-                    <option value="pldc">Regeneración y Reforestación</option>
-                    <option value="programa2">Limpieza de Costas y Cuencas</option>
-                    <option value="programa3">Viverismo Comunitario</option>
-                </select>
-            </div>
+                <div>
+                    <label for="programa">Programa de Interés:</label>
+                    <select id="programa" name="programa" required>
+                        <option value="">Selecciona un programa</option>
+                        <option value="regyrft">Regeneración y Reforestación</option>
+                        <option value="lcycc">Limpieza de Costas y Cuencas</option>
+                        <option value="vvc">Viverismo Comunitario</option>
+                    </select>
+                </div>
 
-            <div>
-                <label for="disponibilidad">Disponibilidad:</label>
-                <select id="disponibilidad" name="disponibilidad" required>
-                    <option value="">Selecciona tu disponibilidad</option>
-                    <option value="manana">Mañana</option>
-                    <option value="tarde">Tarde</option>
-                    <option value="noche">Noche</option>
-                </select>
-            </div>
-            <div>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
-            </div>
+                <div>
+                    <label for="disponibilidad">Disponibilidad:</label>
+                    <select id="disponibilidad" name="disponibilidad" required>
+                        <option value="">Selecciona tu disponibilidad</option>
+                        <option value="tomorrow">Mañana</option>
+                        <option value="afternoon">Tarde</option>
+                        <option value="night">Noche</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
 
-            <button type="submit">Enviar</button>
-        </form>
-
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
     
     <footer>
         <div class="footer-section">
-            <nav>    
+            <nav>
                 <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Nosotros</a></li>
@@ -72,6 +88,7 @@
                 </ul>
             </nav>
         </div>
+        
         <div>
             <p>siguenos en redes sociales:</p>
             <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Icono de Facebook" width="30"></a>
@@ -80,8 +97,8 @@
         </div>
         <div class="footer-section">
             <p>&copy; 2026 Eco Conciencia por un Futuro Sustentable. Todos los derechos reservados.</p>
-        </div>
-        
+        </div> 
     </footer>
+
 </body>
 </html>
