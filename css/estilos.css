@@ -1,0 +1,120 @@
+/* ========================= */
+/* Variables CSS */
+/* ========================= */
+
+:root {
+  --verde-principal: #2E7D32;
+  --verde-oscuro: #1B5E20;
+  --fondo: #F1F8E9;
+  --blanco: #FFFFFF;
+  --texto: #263238;
+}
+/* ========================= */
+/* Reset */
+/* ========================= */
+
+*{ box-sizing: border-box; margin: 0; padding: 0;}
+
+
+/* ========================= */
+/* Body */
+/* ========================= */
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: var(--fondo);
+  color: var(--texto);
+  line-height: 1.6;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ========================= */
+/* Header */
+/* ========================= */
+
+header {
+  background-color: var(--verde-principal);
+  color: var(--blanco);
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: var(--blanco);
+  margin-bottom: 10px;
+}
+
+/* ========================= */
+/* Navegacion */
+/* ========================= */
+
+nav {
+  background-color: var(--verde-oscuro);
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: var(--blanco);
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background-color: var(--verde-principal);
+  color: var(--blanco);
+  text-decoration: underline;
+}
+
+/* ========================= */
+/* Contenido Principal */
+/* ========================= */
+main {
+  max-width: 1100px;
+  margin: 20px auto;
+  background-color: var(--blanco);
+  padding: 25px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+
+h1, h2, h3 {
+  color: var(--verde-oscuro);
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+img {
+  display: block;
+  max-width: 80%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+ul, ol {
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+
+/* ========================= */
+/* Footer */
+/* ========================= */
+
+footer {
+  background-color: var(--verde-oscuro);
+  color: var(--blanco);
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
