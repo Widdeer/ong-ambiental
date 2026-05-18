@@ -154,3 +154,150 @@ footer {
   padding: 15px;
   margin-top: 30px;
 }
+/* ============================================================
+   INTEGRANTE 4 — Tabla, formulario e imágenes
+   Cubre: table, form, inputs, textarea e img
+   ============================================================ */
+
+
+/* ----------------------------------------------------------
+   Tabla
+   ---------------------------------------------------------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+thead {
+  background-color: var(--color-primario);
+  color: #ffffff;
+}
+
+thead th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #eef3f6;
+}
+
+tbody td {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid #dce3e8;
+  color: var(--color-texto);
+}
+
+tbody tr:hover {
+  background-color: #d9eaf0;
+}
+
+tfoot td {
+  padding: 0.65rem 1rem;
+  font-weight: 600;
+  border-top: 2px solid var(--color-primario);
+  color: var(--color-secundario);
+}
+
+
+/* ----------------------------------------------------------
+   Formulario
+   ---------------------------------------------------------- */
+
+form {
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+  color: var(--color-secundario);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.6rem 0.85rem;
+  border: 1px solid #b0bec5;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  color: var(--color-texto);
+  background-color: #ffffff;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--color-primario);
+}
+
+textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+input[type="submit"],
+button[type="submit"] {
+  background-color: var(--color-acento);
+  color: #ffffff;
+  border: none;
+  padding: 0.7rem 1.8rem;
+  font-size: 1rem;
+  font-family: inherit;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+  background-color: var(--color-secundario);
+}
+
+
+/* ----------------------------------------------------------
+   Imágenes
+   ---------------------------------------------------------- */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.img-destacada {
+  margin: 1rem auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+figure {
+  margin: 1.5rem 0;
+}
+
+figcaption {
+  font-size: 0.85rem;
+  color: #607080;
+  margin-top: 0.4rem;
+  text-align: center;
+  font-style: italic;
+}
