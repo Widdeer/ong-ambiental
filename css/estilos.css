@@ -301,3 +301,47 @@ figcaption {
   text-align: center;
   font-style: italic;
 }
+
+/* ========================= */
+/* Bootstrap - personalizaciones */
+/* ========================= */
+
+header {
+  padding: 0;
+}
+
+.navbar {
+  background-color: var(--verde-principal);
+}
+
+.navbar .navbar-brand {
+  color: var(--blanco);
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.navbar .nav-link {
+  color: var(--blanco);
+  font-weight: 600;
+  margin: 0;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.navbar .nav-link:hover {
+  background-color: var(--verde-oscuro);
+}
+
+.card {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-title {
+  color: var(--verde-principal);
+}

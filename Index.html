@@ -6,23 +6,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
-    
 
     <title>EcoConciencia por un Futuro Sustentable</title>
 </head>
 <body>
     <header>
-        <p><a href="#programas-destacados">Ir a programas destacados</a></p>
-        <h1>EcoConciencia por un Futuro Sustentable</h1>
-        <nav aria-label="Navegación principal">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="programas.html">Programas</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark" aria-label="Navegación principal">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">EcoConciencia</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="programas.html">Programas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactos.html">Contactos</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -47,20 +53,36 @@
         <section id="programas-destacados">
             <h2>Programas destacados</h2>
 
-            <article>
-                <h3>Recicla en tu barrio</h3>
-                <p><strong>Descripción:</strong> Promovemos la separación de residuos y reciclaje en comunidades locales.</p>
-            </article>
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Recicla en tu barrio</h3>
+                                <p class="card-text">Promovemos la separación de residuos y reciclaje en comunidades locales.</p>
+                            </div>
+                        </div>
+                    </div>
 
-            <article>
-                <h3>Plantemos un árbol</h3>
-                <p><strong>Descripción:</strong> Realizamos jornadas de Reforestación en diferentes zonas urbanas.</p>
-            </article>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Plantemos un árbol</h3>
+                                <p class="card-text">Realizamos jornadas de reforestación en diferentes zonas urbanas.</p>
+                            </div>
+                        </div>
+                    </div>
 
-            <article>
-                <h3>Escuelas verdes</h3>
-                <p><strong>Descripción:</strong> Educamos a jóvenes sobre la importancia del cuidado ambiental.</p>
-            </article>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Escuelas verdes</h3>
+                                <p class="card-text">Educamos a jóvenes sobre la importancia del cuidado ambiental.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <p><a href="programas.html">Ver todos los programas</a></p>
         </section>
@@ -99,6 +121,8 @@
                 <p>&copy; 2026 Eco Conciencia por un Futuro Sustentable. Todos los derechos reservados.</p>
             </div>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
