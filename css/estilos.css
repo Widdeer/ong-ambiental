@@ -345,3 +345,25 @@ header {
 .card-title {
   color: var(--verde-principal);
 }
+/* ========================= */
+/* Integrante 3 - Flexbox */
+/* ========================= */
+
+.footer-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-section ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  flex: 1 1 120px;
+}
