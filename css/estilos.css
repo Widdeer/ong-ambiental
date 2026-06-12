@@ -367,3 +367,201 @@ header {
 .footer-section li {
   flex: 1 1 120px;
 }
+
+
+/* ============================================================
+   INTEGRANTE 4 — Posicionamiento y personalización Bootstrap
+   Cubre:
+     · Hero banner con position:relative / position:absolute
+     · Badge sobre card con position:absolute
+     · Navbar sticky con position:sticky
+     · Botón personalizado sobre Bootstrap
+     · Hover y transiciones sobre componentes Bootstrap
+   ============================================================ */
+
+
+/* ----------------------------------------------------------
+   Posicionamiento — Hero banner
+   El contenedor es relative; el texto queda absolute encima
+   ---------------------------------------------------------- */
+
+.hero-banner {
+  position: relative;           /* ancla al texto superpuesto */
+  width: 100%;
+  max-height: 420px;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+  margin: 0;
+  /* oscurece la imagen para que el texto sea legible */
+  filter: brightness(0.55);
+}
+
+.hero-texto {
+  position: absolute;           /* se superpone sobre .hero-img */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--blanco);
+  width: 90%;
+}
+
+.hero-texto h1 {
+  color: var(--blanco);
+  font-size: clamp(1.5rem, 4vw, 2.6rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.hero-texto p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  margin-bottom: 1.2rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+/* ----------------------------------------------------------
+   Posicionamiento — Badge sobre card
+   Usa position:absolute dentro de .card-con-badge (relative)
+   ---------------------------------------------------------- */
+
+.card-con-badge {
+  position: relative;           /* ancla el badge */
+}
+
+.badge-destacado {
+  position: absolute;           /* flota sobre la esquina de la card */
+  top: 12px;
+  right: 12px;
+  background-color: var(--verde-principal);
+  color: var(--blanco);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.03em;
+  z-index: 1;
+}
+
+
+/* ----------------------------------------------------------
+   Posicionamiento — Navbar sticky
+   Se queda visible en la parte superior al hacer scroll
+   ---------------------------------------------------------- */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+/* ----------------------------------------------------------
+   Bootstrap - personalización de botones
+   Botón principal con colores de la ONG
+   ---------------------------------------------------------- */
+
+.btn-hero {
+  background-color: var(--verde-principal);
+  color: var(--blanco);
+  border: 2px solid var(--blanco);
+  padding: 0.6rem 1.8rem;
+  font-weight: 700;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease;
+}
+
+.btn-hero:hover {
+  background-color: var(--blanco);
+  color: var(--verde-oscuro);
+  transform: translateY(-2px);
+}
+
+.btn-primary-ong {
+  background-color: var(--verde-principal);
+  color: var(--blanco);
+  border: none;
+  padding: 0.45rem 1.2rem;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9rem;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+.btn-primary-ong:hover {
+  background-color: var(--verde-oscuro);
+  color: var(--blanco);
+  transform: translateY(-2px);
+}
+
+
+/* ----------------------------------------------------------
+   Bootstrap - personalización de cards
+   Mejora los hover y colores usando variables de la ONG
+   ---------------------------------------------------------- */
+
+.card {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(46, 125, 50, 0.2);
+}
+
+.card-title {
+  color: var(--verde-principal);
+  font-weight: 700;
+}
+
+
+/* ----------------------------------------------------------
+   Bootstrap - personalización de la navbar
+   Fuerza los colores de la ONG sobre los estilos de Bootstrap
+   ---------------------------------------------------------- */
+
+.navbar {
+  background-color: var(--verde-principal) !important;
+}
+
+.navbar .navbar-brand {
+  color: var(--blanco);
+  font-weight: 700;
+  font-size: 1.4rem;
+  transition: color 0.2s ease;
+}
+
+.navbar .navbar-brand:hover {
+  color: #c8e6c9;
+}
+
+.navbar .nav-link {
+  color: var(--blanco) !important;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  background-color: var(--verde-oscuro);
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.6);
+}
