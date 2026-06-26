@@ -8,6 +8,9 @@
   --fondo: #F1F8E9;
   --blanco: #FFFFFF;
   --texto: #263238;
+  --color-primario: #2E7D32;
+  --color-secundario: #1B5E20;
+  --color-acento: #2E7D32;
 }
 /* ========================= */
 /* Reset */
@@ -366,6 +369,19 @@ header {
 
 .footer-section li {
   flex: 1 1 120px;
+}
+
+.redes-sociales {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.redes-sociales p {
+  flex-basis: 100%;
+  margin: 0 0 8px;
 }
 
 
