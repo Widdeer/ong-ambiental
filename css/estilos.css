@@ -574,3 +574,29 @@ header {
 .navbar-toggler {
   border-color: rgba(255, 255, 255, 0.6);
 }
+
+
+/* modo oscuro */
+body.modo-oscuro {
+  --fondo: #121212;
+  --texto: #e8e8e8;
+  --verde-principal: #4caf50;
+}
+
+body.modo-oscuro main,
+body.modo-oscuro .card {
+  background-color: #1e1e1e;
+  color: var(--texto);
+}
+
+body.modo-oscuro input,
+body.modo-oscuro select,
+body.modo-oscuro textarea{
+  background-color: #1e1e1e;
+  color: var(--texto);
+  border-color: #555;
+}
+
+body.modo-oscuro ::placeholder{
+  color: #aaa;
+}
