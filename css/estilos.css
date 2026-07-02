@@ -30,6 +30,15 @@ body {
   line-height: 1.6;
   max-width: 1100px;
   margin: 0 auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body main,
+body .card,
+body input,
+body select,
+body textarea {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 /* ========================= */
