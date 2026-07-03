@@ -505,6 +505,21 @@ header {
   transform: translateY(-2px);
 }
 
+#btnTema {
+  background-color: var(--blanco);
+  color: var(--verde-oscuro);
+  border: 2px solid var(--blanco);
+  font-weight: 700;
+  border-radius: 6px;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease;
+}
+
+#btnTema:hover {
+  background-color: var(--verde-oscuro);
+  color: var(--blanco);
+  transform: translateY(-2px);
+}
+
 .btn-primary-ong {
   background-color: var(--verde-principal);
   color: var(--blanco);
